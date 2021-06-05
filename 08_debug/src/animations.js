@@ -6,7 +6,7 @@ import camera from "./camera";
 const clock = new THREE.Clock();
 
 const tick = (scene) => {
-  // how many seconds since the clock was stantiated
+  // how many seconds since the clock was instantiated
   const elapsedTime = clock.getElapsedTime();
 
   // update controls to have damping
