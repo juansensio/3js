@@ -1,0 +1,14 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+    "err": {
+      "name": "Error",
+      "message": "No package.json (or package.yaml, or package.json5) was found in \"/Users/sensio/Desktop/3js\".",
+      "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+      "stack": "Error: No package.json (or package.yaml, or package.json5) was found in \"/Users/sensio/Desktop/3js\".\n    at readProjectManifest (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:39642:13)\n    at async Object.readProjectManifestOnly (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:39646:28)\n    at async Object.readProjectManifestOnly (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:39865:24)\n    at async Object.handler (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:120302:24)\n    at async Timeout._onTimeout (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:124348:24)"
+    }
+  }
+}

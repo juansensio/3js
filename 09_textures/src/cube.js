@@ -16,7 +16,9 @@ const loadingManager = new THREE.LoadingManager();
 const textureLoader = new THREE.TextureLoader(loadingManager);
 
 const colorTexture = textureLoader.load(
-  "../textures/door/color.jpg"
+  //"../textures/door/color.jpg"
+  //"../textures/checkerboard-1024x1024.png"
+  "../textures/checkerboard-8x8.png"
   // loading events (pero mejor usar el manager)
   //   () => {
   //     console.log("load");
@@ -40,17 +42,24 @@ const metalnessTexture = textureLoader.load("../textures/door/metalness.jpg");
 const roughnessTexture = textureLoader.load("../textures/door/roughness.jpg");
 
 // repeat texture
-colorTexture.repeat.x = 2;
-colorTexture.repeat.y = 2;
-colorTexture.wrapS = THREE.RepeatWrapping;
-colorTexture.wrapT = THREE.RepeatWrapping;
+// colorTexture.repeat.x = 2;
+// colorTexture.repeat.y = 2;
+// colorTexture.wrapS = THREE.RepeatWrapping;
+// colorTexture.wrapT = THREE.RepeatWrapping;
 
 // offset
-colorTexture.offset.x = 0.5;
-colorTexture.offset.y = 0.5;
+// colorTexture.offset.x = 0.5;
+// colorTexture.offset.y = 0.5;
 
 // rotation
-colorTexture.rotation = 1; // radians
+// colorTexture.rotation = Math.PI / 4; // radians
+// colorTexture.center.x = 0.5;
+// colorTexture.center.y = 0.5;
+
+// keep small textures
+colorTexture.generateMipmaps = false; // do not create mip maps (better perfomance for NearestFilter)
+colorTexture.minFilter = THREE.NearestFilter;
+colorTexture.magFilter = THREE.NearestFilter;
 
 const geometry = new THREE.BoxGeometry(1, 1, 1, 5, 5, 5);
 // uv coordinates map pixels on the texture to vertices on the geometry
