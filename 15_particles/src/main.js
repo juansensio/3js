@@ -24,7 +24,6 @@ const update = () => {
     particlesPositionsArray[i + 1] = Math.sin(elapsedTime + x);
   }
   particlesPositions.needsUpdate = true;
-  particles.geometry;
   controls.update();
   renderer.render(scene, camera);
   window.requestAnimationFrame(update);
