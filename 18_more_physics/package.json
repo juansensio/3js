@@ -1,0 +1,17 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.3.5"
+  },
+  "dependencies": {
+    "cannon": "^0.6.2",
+    "dat.gui": "^0.7.7",
+    "gsap": "^3.6.1",
+    "three": "^0.129.0"
+  }
+}

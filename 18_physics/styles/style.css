@@ -1,0 +1,16 @@
+/* remove all borders */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* remove scrolling */
+html,
+body {
+  overflow: hidden;
+}
+
+/* remove blue border */
+.webgl {
+  outline: none;
+}
